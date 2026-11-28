@@ -70,20 +70,6 @@ abstract class HomeActivity : AppBarActivity() {
             }
         }
 
-        homeModel.shouldShowRebootDialog.observe(this) { shouldShow ->
-            if (shouldShow) showExitDialog(
-                getString(R.string.home_dialog_reboot_required_title),
-                getString(R.string.home_dialog_reboot_required_message)
-            )
-        }
-
-        homeModel.shouldShowUninstallDialog.observe(this) { shouldShow ->
-            if (shouldShow) showExitDialog(
-                getString(R.string.home_dialog_duplicate_app_detected_title),
-                getString(R.string.home_dialog_duplicate_app_detected_message)
-            )
-        }
-
         homeModel.shouldShowBatteryOptimizationSnackbar.observe(this) { shouldShow ->
             if (shouldShow) SnackbarHelper.show(
                 this,
