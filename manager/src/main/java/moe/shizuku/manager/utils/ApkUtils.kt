@@ -94,22 +94,21 @@ fun File.changePackageName(newPkgName: String, maybeCreateSigningKey: Boolean = 
     }
 
     // Rewrite intent-filter actions containing old package name or rikka.shizuku namespace
-    val allComponents = appElement.getElements("activity") +
-        appElement.getElements("receiver") +
-        appElement.getElements("service")
-    for (comp in allComponents) {
-        val filters = comp.getElements("intent-filter")
-        for (f in filters) {
-            val actions = f.getElements("action")
-            for (action in actions) {
-                val attr = action.searchAttribute(Namespace.URI_ANDROID, "name")
-                val actName = attr?.valueAsString ?: continue
-                when {
-                    actName.startsWith(oldPkgName) ->
-                        attr.setValueAsString(actName.replace(oldPkgName, newPkgName))
-                    // Rewrite rikka.shizuku.* fingerprint actions so they cannot be queried
-                    actName.startsWith("rikka.shizuku.") ->
-                        attr.setValueAsString(actName.replace("rikka.shizuku", newPkgName))
+    for (tag in listOf("activity", "receiver", "service")) {
+        for (comp in appElement.getElements(tag)) {
+            val filters = comp.getElements("intent-filter")
+            for (f in filters) {
+                val actions = f.getElements("action")
+                for (action in actions) {
+                    val attr = action.searchAttribute(Namespace.URI_ANDROID, "name")
+                    val actName = attr?.valueAsString ?: continue
+                    when {
+                        actName.startsWith(oldPkgName) ->
+                            attr.setValueAsString(actName.replace(oldPkgName, newPkgName))
+                        // Rewrite rikka.shizuku.* fingerprint actions so they cannot be queried
+                        actName.startsWith("rikka.shizuku.") ->
+                            attr.setValueAsString(actName.replace("rikka.shizuku", newPkgName))
+                    }
                 }
             }
         }
