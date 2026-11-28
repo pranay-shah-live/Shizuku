@@ -10,8 +10,17 @@ if (ksFile.canRead()) {
         android.signingConfigs.sign.keyPassword props["KEYSTORE_ALIAS_PASSWORD"]
     }
 } else {
-    android.signingConfigs.sign.storeFile = android.signingConfigs.debug.storeFile
-    android.signingConfigs.sign.storePassword = android.signingConfigs.debug.storePassword
-    android.signingConfigs.sign.keyAlias = android.signingConfigs.debug.keyAlias
-    android.signingConfigs.sign.keyPassword = android.signingConfigs.debug.keyPassword
+    def debugStore = android.signingConfigs.debug.storeFile
+    def homeStore = new File(System.getProperty("user.home"), ".android/debug.keystore")
+    if ((debugStore == null || !debugStore.exists()) && homeStore.exists()) {
+        android.signingConfigs.sign.storeFile = homeStore
+        android.signingConfigs.sign.storePassword = "android"
+        android.signingConfigs.sign.keyAlias = "androiddebugkey"
+        android.signingConfigs.sign.keyPassword = "android"
+    } else {
+        android.signingConfigs.sign.storeFile = debugStore
+        android.signingConfigs.sign.storePassword = android.signingConfigs.debug.storePassword
+        android.signingConfigs.sign.keyAlias = android.signingConfigs.debug.keyAlias
+        android.signingConfigs.sign.keyPassword = android.signingConfigs.debug.keyPassword
+    }
 }
