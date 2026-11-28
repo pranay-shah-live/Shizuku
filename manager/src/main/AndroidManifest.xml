@@ -67,7 +67,9 @@
         tools:node="remove" />
 
     <queries>
-        <package android:name="moe.shizuku.privileged.api" />
+        <intent>
+            <action android:name="rikka.shizuku.intent.action.REQUEST_BINDER" />
+        </intent>
     </queries>
 
     <application

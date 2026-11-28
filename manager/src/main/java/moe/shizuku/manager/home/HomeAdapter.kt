@@ -68,7 +68,7 @@ class HomeAdapter(private val homeModel: HomeViewModel, private val appsModel: A
         }
         addItem(AutomationViewHolder.CREATOR, null, ID_AUTOMATION)
 
-        addItem(StealthViewHolder.CREATOR, null, ID_STEALTH)
+        addItem(StealthViewHolder.creator(scope), null, ID_STEALTH)
 
         addItem(LearnMoreViewHolder.CREATOR, null, ID_LEARN_MORE)
         notifyDataSetChanged()

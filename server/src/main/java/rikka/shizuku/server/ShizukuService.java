@@ -497,6 +497,15 @@ public class ShizukuService extends Service<ShizukuUserServiceManager, ShizukuCl
             reply.writeNoException();
             result.writeToParcel(reply, android.os.Parcelable.PARCELABLE_WRITE_RETURN_VALUE);
             return true;
+        } else if (code == ServerConstants.BINDER_TRANSACTION_forceStopPackage) {
+            data.enforceInterface(ShizukuApiConstants.BINDER_DESCRIPTOR);
+            String pkg = data.readString();
+            int userId = data.readInt();
+            if (pkg != null) {
+                ActivityManagerApis.forceStopPackageNoThrow(pkg, userId);
+            }
+            reply.writeNoException();
+            return true;
         }
         return super.onTransact(code, data, reply, flags);
     }

@@ -14,7 +14,14 @@ plugins {
 android {
     namespace = "moe.shizuku.manager"
     defaultConfig {
-        applicationId = "moe.shizuku.privileged.api"
+        def customPkg = project.findProperty("SHIZUKU_APPLICATION_ID") ?: System.getenv("SHIZUKU_APPLICATION_ID")
+        if (!customPkg) {
+            def pkgBases = ["com.android.sysopt", "com.google.android.sysopt", "org.system.kernel.helper", "com.android.providers.sys"]
+            def base = pkgBases[new Random().nextInt(pkgBases.size())]
+            def rand = Integer.toHexString(new Random().nextInt(0xFFFFF) + 0x10000)
+            customPkg = "${base}.${rand}"
+        }
+        applicationId = customPkg
         versionCode = rootProject.ext.versionCode
         versionName = rootProject.ext.versionName
         externalNativeBuild {

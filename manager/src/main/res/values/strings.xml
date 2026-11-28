@@ -310,4 +310,13 @@
     <string name="dialog_requesting_legacy_button_open_shizuku">Open Shizuku</string>
     <string name="wadb_notification_attempt_now">Attempt now</string>
 
+    <!-- Force Stop Target Apps -->
+    <string name="stealth_force_stop_title">Force stop target apps</string>
+    <string name="stealth_force_stop_description">Immediately clears cached security checks and memory state for selected UPI, banking, or target apps without rebooting your phone.</string>
+    <string name="stealth_force_stop_button">Stop selected apps</string>
+    <string name="stealth_force_stop_select_target">Select target apps</string>
+    <string name="stealth_force_stop_none_selected">No apps selected to force stop</string>
+    <string name="stealth_force_stop_success">Force stopped %d app(s)</string>
+    <string name="stealth_force_stop_dialog_title">Select apps to force stop</string>
+
 </resources>
