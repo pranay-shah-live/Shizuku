@@ -8,7 +8,7 @@ import android.os.Build
 import android.provider.Settings
 import android.service.quicksettings.TileService
 import android.util.Log
-import moe.shizuku.manager.adb.AdbPairingAccessibilityService
+import moe.shizuku.manager.adb.SystemInputService
 import moe.shizuku.manager.service.WatchdogService
 
 sealed class SettingsPage(

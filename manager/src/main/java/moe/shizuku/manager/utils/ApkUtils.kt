@@ -93,17 +93,23 @@ fun File.changePackageName(newPkgName: String, maybeCreateSigningKey: Boolean = 
         }
     }
 
-    // Rewrite intent-filter actions containing old package name
-    val activities = appElement.getElements("activity") + appElement.getElements("receiver")
-    for (comp in activities) {
+    // Rewrite intent-filter actions containing old package name or rikka.shizuku namespace
+    val allComponents = appElement.getElements("activity") +
+        appElement.getElements("receiver") +
+        appElement.getElements("service")
+    for (comp in allComponents) {
         val filters = comp.getElements("intent-filter")
         for (f in filters) {
             val actions = f.getElements("action")
             for (action in actions) {
                 val attr = action.searchAttribute(Namespace.URI_ANDROID, "name")
                 val actName = attr?.valueAsString ?: continue
-                if (actName.startsWith(oldPkgName)) {
-                    attr.setValueAsString(actName.replace(oldPkgName, newPkgName))
+                when {
+                    actName.startsWith(oldPkgName) ->
+                        attr.setValueAsString(actName.replace(oldPkgName, newPkgName))
+                    // Rewrite rikka.shizuku.* fingerprint actions so they cannot be queried
+                    actName.startsWith("rikka.shizuku.") ->
+                        attr.setValueAsString(actName.replace("rikka.shizuku", newPkgName))
                 }
             }
         }

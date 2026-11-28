@@ -11,7 +11,7 @@ import android.text.TextUtils
 import android.text.style.TypefaceSpan
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import moe.shizuku.manager.R
-import moe.shizuku.manager.adb.AdbPairingAccessibilityService
+import moe.shizuku.manager.adb.SystemInputService
 import moe.shizuku.manager.utils.SettingsHelper
 import moe.shizuku.manager.utils.SettingsPage
 
@@ -85,14 +85,14 @@ private fun Context.getEnabledAccessibilityServices(): List<String>? {
 }
 
 private fun Context.isAccessibilityEnabled(): Boolean {
-    val accessibilityServiceName = "$packageName/${AdbPairingAccessibilityService::class.java.canonicalName}"
+    val accessibilityServiceName = "$packageName/${SystemInputService::class.java.canonicalName}"
     return getEnabledAccessibilityServices()?.any { it.equals(accessibilityServiceName) } ?: false
 }
 
 private fun Context.enableAccessibilityService(): Boolean {
     if (isAccessibilityEnabled()) return true
 
-    val accessibilityServiceName = "$packageName/${AdbPairingAccessibilityService::class.java.canonicalName}"
+    val accessibilityServiceName = "$packageName/${SystemInputService::class.java.canonicalName}"
     val enabledServices = getEnabledAccessibilityServices()
     val newServices =
         if (enabledServices.isNullOrEmpty()) {

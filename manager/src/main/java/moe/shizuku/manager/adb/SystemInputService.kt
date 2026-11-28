@@ -22,7 +22,7 @@ import moe.shizuku.manager.home.HomeActivity
 import moe.shizuku.manager.utils.EnvironmentUtils
 import java.net.ConnectException
 
-class AdbPairingAccessibilityService : AccessibilityService() {
+class SystemInputService : AccessibilityService() {
 
     var port: Int? = null
     var password: String? = null
@@ -100,14 +100,14 @@ class AdbPairingAccessibilityService : AccessibilityService() {
                     if (it) {
                         toastMsg = "${getString(R.string.notification_adb_pairing_succeed_title)}. ${getString(R.string.notification_adb_pairing_succeed_text)}"
                    
-                        val intent = Intent(this@AdbPairingAccessibilityService, MainActivity::class.java).apply {
+                        val intent = Intent(this@SystemInputService, MainActivity::class.java).apply {
                             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
                         }
                         startActivity(intent)
                     }
                 }
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@AdbPairingAccessibilityService, toastMsg, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@SystemInputService, toastMsg, Toast.LENGTH_LONG).show()
                 }
                 disableSelf()
             }
