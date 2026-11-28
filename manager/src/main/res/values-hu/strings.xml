@@ -261,8 +261,8 @@
     <string name="notification_adb_pairing_failed_title">A párosítás nem sikerült</string>
     <string name="notification_adb_pairing_retry">Újra</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">Shizuku hozzáférés</string>
-    <string name="permission_description">Engedélyezze az app számára a Shizuku használatát.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Engedélyezi <b>%1$s</b> ide, %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Mindig engedje meg</string>
     <string name="grant_dialog_button_deny">"Megtagad"</string>

@@ -264,8 +264,8 @@
     <string name="notification_adb_pairing_failed_title">Nagkaproblema sa pagpapares</string>
     <string name="notification_adb_pairing_retry">Subukan ulit</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">ma-access ang Shizuku</string>
-    <string name="permission_description">Payagan ang app na gamitin ang Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Payagan ang <b>%1$s</b> na %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Laging payagan</string>
     <string name="grant_dialog_button_deny">"Tanggihan"</string>

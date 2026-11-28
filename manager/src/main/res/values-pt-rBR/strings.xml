@@ -261,8 +261,8 @@
     <string name="notification_adb_pairing_failed_title">Falha no pareamento</string>
     <string name="notification_adb_pairing_retry">Tentar novamente</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">acessar Shizuku</string>
-    <string name="permission_description">Permita que o aplicativo use o Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Permitir que o app <b>%1$s</b> %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Permitir o tempo todo</string>
     <string name="grant_dialog_button_deny">"Negar"</string>

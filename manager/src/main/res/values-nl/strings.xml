@@ -255,8 +255,8 @@
     <string name="notification_adb_pairing_failed_title">Koppeling mislukte</string>
     <string name="notification_adb_pairing_retry">Opnieuw</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">toegang tot Shizuku</string>
-    <string name="permission_description">Laat de app Shizuku gebruiken.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[<b>%1$s</b> toestaan tot %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Altijd toestaan</string>
     <string name="grant_dialog_button_deny">"Weigeren"</string>

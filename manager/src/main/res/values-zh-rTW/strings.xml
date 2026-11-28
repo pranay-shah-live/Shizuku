@@ -200,8 +200,8 @@
     <string name="notification_adb_pairing_failed_title">配對失敗</string>
     <string name="notification_adb_pairing_retry">重試</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">使用 Shizuku</string>
-    <string name="permission_description">允許應用程式使用 Shizuku。</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[要允許「%1$s」%2$s 嗎？]]></string>
     <string name="grant_dialog_button_allow_always">一律允許</string>
     <string name="grant_dialog_button_deny">"拒絕"</string>

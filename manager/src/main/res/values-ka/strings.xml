@@ -254,8 +254,8 @@
     <string name="notification_adb_pairing_failed_title">დაწყვილება ვერ მოხერხდა</string>
     <string name="notification_adb_pairing_retry">ხელახლა სცადეთ</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">წვდომა Shizuku</string>
-    <string name="permission_description">მიეცით აპს საშუალება გამოიყენოს Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[ნება დართეთ <b>%1$s</b> მდე %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">ნება დართეთ ყველა დროის</string>
     <string name="grant_dialog_button_deny">"უარყოფა"</string>

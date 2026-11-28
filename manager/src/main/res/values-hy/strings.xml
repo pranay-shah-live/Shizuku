@@ -258,7 +258,7 @@
     <string name="notification_adb_pairing_failed_title">Զուգավորումը ձախողվեց</string>
     <string name="notification_adb_pairing_retry">Կրկին փորձել</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">օգտվել Shizuku-ից</string>
+    <string name="permission_label">access system helper</string>
     <string name="permission_description">Թողնել ծրագրին օգտվել ավելի բարձր արտոնություններով
         համակարգային API-ներից։</string>
     <string name="permission_warning_template"><![CDATA[Թույլատրե՞լ <b>%1$s</b> հավելվածին %2$s:]]></string>

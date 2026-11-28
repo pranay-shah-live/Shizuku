@@ -267,8 +267,8 @@
     <string name="notification_adb_pairing_failed_title">Koppeln fehlgeschlagen</string>
     <string name="notification_adb_pairing_retry">Wiederholen</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">Shizuku-Zugriff</string>
-    <string name="permission_description">Der App erlauben, Shizuku zu verwenden.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[<b>%1$s</b> erlauben %2$s zu verwenden\?]]></string>
     <string name="grant_dialog_button_allow_always">Immer zulassen</string>
     <string name="grant_dialog_button_deny">"Verweigern"</string>

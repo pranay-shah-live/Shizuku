@@ -247,8 +247,8 @@
     <string name="notification_adb_pairing_failed_title">Ghép nối thất bại</string>
     <string name="notification_adb_pairing_retry">Thử lại</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">truy cập Shizuku</string>
-    <string name="permission_description">Cho phép ứng dụng sử dụng Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Cho phép <b>%1$s</b> thành %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Cho phép mọi lúc</string>
     <string name="grant_dialog_button_deny">"Từ chối"</string>

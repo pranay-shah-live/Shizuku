@@ -193,8 +193,8 @@
     <string name="notification_adb_pairing_failed_title">Párování selhalo</string>
     <string name="notification_adb_pairing_retry">Zkusit znovu</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">přístup k Shizuku</string>
-    <string name="permission_description">povolí aplikaci používat systémová rozhraní API s vyššími oprávněními (Shizuku).</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Povolit aplikaci </b>%1$s</b> %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Povolit vždy</string>
     <string name="grant_dialog_button_deny">"Zakázat"</string>

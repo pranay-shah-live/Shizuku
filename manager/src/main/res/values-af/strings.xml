@@ -251,8 +251,8 @@
     <string name="notification_adb_pairing_failed_title">Paring het misluk</string>
     <string name="notification_adb_pairing_retry">Probeer weer</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">toegang tot Shizuku</string>
-    <string name="permission_description">Laat die program toe om Shizuku te gebruik.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Laat <b>%1$s</b> tot %2$stoe?]]></string>
     <string name="grant_dialog_button_allow_always">Laat heeltyd toe</string>
     <string name="grant_dialog_button_deny">"Weier"</string>

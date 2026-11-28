@@ -259,8 +259,8 @@
     <string name="notification_adb_pairing_failed_title">Не удалось выполнить сопряжение</string>
     <string name="notification_adb_pairing_retry">Повторить попытку</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">доступ Shizuku</string>
-    <string name="permission_description">Разрешить приложению использовать Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Разрешить <b>%1$s</b> следующее: %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Разрешить всегда</string>
     <string name="grant_dialog_button_deny">"Запретить"</string>

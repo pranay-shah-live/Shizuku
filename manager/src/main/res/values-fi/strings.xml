@@ -250,8 +250,8 @@
     <string name="notification_adb_pairing_failed_title">Paritus epäonnistui</string>
     <string name="notification_adb_pairing_retry">Yritä</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">pääsy Shizukuun</string>
-    <string name="permission_description">Salli sovelluksen käyttää Shizukua.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Sallia <b>%1$s</b> jotta %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Anna koko ajan</string>
     <string name="grant_dialog_button_deny">"Kieltää"</string>

@@ -262,8 +262,8 @@
     <string name="notification_adb_pairing_failed_title">Парування невдале</string>
     <string name="notification_adb_pairing_retry">Спробувати ще раз</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">доступ до Shizuku</string>
-    <string name="permission_description">Дозволити програмі використовувати Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Дозволити додатку <b>%1$s</b> таке: %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Завжди дозволяти</string>
     <string name="grant_dialog_button_deny">"Заборонити"</string>

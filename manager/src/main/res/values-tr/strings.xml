@@ -254,8 +254,8 @@
     <string name="notification_adb_pairing_failed_title">Eşleştirme başarısız</string>
     <string name="notification_adb_pairing_retry">Yeniden dene</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">Shizuku’ya erişim</string>
-    <string name="permission_description">Uygulamanın Shizuku’yu kullanmasına izin verin.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[<b>%1$s</b> uygulamasına %2$s için izin verilsin mi\?]]></string>
     <string name="grant_dialog_button_allow_always">Her zaman izin ver</string>
     <string name="grant_dialog_button_deny">"Reddet"</string>

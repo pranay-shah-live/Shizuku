@@ -219,8 +219,8 @@
     <string name="notification_adb_pairing_failed_title">ペアリングに失敗しました</string>
     <string name="notification_adb_pairing_retry">再試行</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">Shizukuにアクセスする</string>
-    <string name="permission_description">アプリでShizukuの使用を許可します。</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[<b>%1$s</b> に「%2$s」を許可しますか？]]></string>
     <string name="grant_dialog_button_allow_always">常に許可</string>
     <string name="grant_dialog_button_deny">"許可しない"</string>

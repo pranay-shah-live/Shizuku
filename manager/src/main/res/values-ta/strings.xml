@@ -259,8 +259,8 @@
     <string name="notification_adb_pairing_failed_title">இணைத்தல் தோல்வியடைந்தது</string>
     <string name="notification_adb_pairing_retry">மீண்டும் முயற்சிக்கவும்</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">ஷிசுகுவை அணுகவும்</string>
-    <string name="permission_description">ஷிசுகுவைப் பயன்படுத்த பயன்பாட்டை அனுமதிக்கவும்.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[<b>%1$s</b> %2$sஐ அனுமதிக்கவா?]]></string>
     <string name="grant_dialog_button_allow_always">எல்லா நேரங்களிலும் அனுமதி</string>
     <string name="grant_dialog_button_deny">"மறுக்கவும்"</string>

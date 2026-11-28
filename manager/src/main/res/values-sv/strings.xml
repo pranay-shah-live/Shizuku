@@ -248,8 +248,8 @@
     <string name="notification_adb_pairing_failed_title">Parkopplingen misslyckades</string>
     <string name="notification_adb_pairing_retry">Försöka igen</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">komma åt Shizuku</string>
-    <string name="permission_description">Tillåt appen att använda Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Tillåt <b>%1$s</b> till %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Tillåt hela tiden</string>
     <string name="grant_dialog_button_deny">"Förneka"</string>

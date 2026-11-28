@@ -246,8 +246,8 @@
     <string name="notification_adb_pairing_failed_title">فشل الاقتران</string>
     <string name="notification_adb_pairing_retry">أعد المحاولة</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">الوصول إلى Shizuku</string>
-    <string name="permission_description">اسمح للتطبيق باستخدام Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[هل تريد السماح لـ <b>%1$s</b> بـ %2$s؟]]></string>
     <string name="grant_dialog_button_allow_always">السماح في كل وقت</string>
     <string name="grant_dialog_button_deny">"منع"</string>

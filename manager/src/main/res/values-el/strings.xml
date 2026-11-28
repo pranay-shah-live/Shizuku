@@ -264,8 +264,8 @@
     <string name="notification_adb_pairing_failed_title">Η σύζευξη απέτυχε</string>
     <string name="notification_adb_pairing_retry">Δοκιμάζω πάλι</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">πρόσβαση στο Shizuku</string>
-    <string name="permission_description">Επιτρέψτε στην εφαρμογή να χρησιμοποιεί το Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Επιτρέπεται η χρήση του <b>%1$s</b> σε %2$s;]]></string>
     <string name="grant_dialog_button_allow_always">Επιτρέπεται συνεχώς</string>
     <string name="grant_dialog_button_deny">"Αρνούμαι"</string>

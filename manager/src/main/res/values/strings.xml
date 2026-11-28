@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Shizuku</string>
+    <string name="app_name" translatable="false">System Service</string>
 
     <!-- To translators: you can leave your here -->
     <string name="translation_contributors" />
@@ -263,10 +263,10 @@
     <string name="notification_auth_invalid_message">Make sure the token in your intent matches the one shown under “View intents” in the app.</string>
 
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_group_label" translatable="false">Shizuku</string>
+    <string name="permission_group_label" translatable="false">System Helper</string>
     <string name="permission_group_description" translatable="false">@string/permission_label</string>
-    <string name="permission_label">access Shizuku</string>
-    <string name="permission_description">Allow the app to use Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Allow <b>%1$s</b> to %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Allow all the time</string>
     <string name="grant_dialog_button_deny">"Deny"</string>

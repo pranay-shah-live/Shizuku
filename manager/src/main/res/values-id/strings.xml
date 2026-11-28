@@ -254,8 +254,8 @@
     <string name="notification_adb_pairing_failed_title">Penyambungan gagal</string>
     <string name="notification_adb_pairing_retry">Ulangi</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">mengakses Shizuku</string>
-    <string name="permission_description">Izinkan aplikasi menggunakan Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Izinkan <b>%1$s</b> untuk %2$s\?]]></string>
     <string name="grant_dialog_button_allow_always">Selalu izinkan</string>
     <string name="grant_dialog_button_deny">"Tolak"</string>

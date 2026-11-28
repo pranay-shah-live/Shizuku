@@ -244,8 +244,8 @@
     <string name="notification_adb_pairing_failed_title">Paringen mislyktes</string>
     <string name="notification_adb_pairing_retry">Prøve</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">tilgang til Shizuku</string>
-    <string name="permission_description">La appen bruke Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Tillate <b>%1$s</b> til %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Gi all tid</string>
     <string name="grant_dialog_button_deny">"Benekte"</string>

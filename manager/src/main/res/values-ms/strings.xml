@@ -255,8 +255,8 @@
     <string name="notification_adb_pairing_failed_title">Gagal bergandingan</string>
     <string name="notification_adb_pairing_retry">Cuba semula</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">akses Shizuku</string>
-    <string name="permission_description">Benarkan apl menggunakan Shizuku.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[Benarkan <b>%1$s</b> ke %2$s?]]></string>
     <string name="grant_dialog_button_allow_always">Benarkan sepanjang masa</string>
     <string name="grant_dialog_button_deny">"Nafikan"</string>

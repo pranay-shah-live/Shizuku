@@ -250,8 +250,8 @@
     <string name="notification_adb_pairing_failed_title">مرتبط سازی انجام نشد</string>
     <string name="notification_adb_pairing_retry">سعی مجدد</string>
     <!-- Permission related, appears in system permission UI -->
-    <string name="permission_label">دسترسی Shizuku</string>
-    <string name="permission_description">به برنامه اجازه دهید از Shizuku استفاده کند.</string>
+    <string name="permission_label">access system helper</string>
+    <string name="permission_description">Allow the app to use system helper.</string>
     <string name="permission_warning_template"><![CDATA[اجازه <b>%1$s</b> برای %2$s؟]]></string>
     <string name="grant_dialog_button_allow_always">همیشه اجازه داده شود</string>
     <string name="grant_dialog_button_deny">"رد"</string>
