@@ -150,35 +150,18 @@ object AppProfileManager {
 
     private fun writeGlobalSetting(key: String, value: Int): Boolean {
         return try {
-            if (appContext.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED) {
-                Settings.Global.putInt(appContext.contentResolver, key, value)
-            } else {
-                writeViaShell("settings put global $key $value")
-            }
+            Settings.Global.putInt(appContext.contentResolver, key, value)
         } catch (e: Throwable) {
-            writeViaShell("settings put global $key $value")
+            Log.w(TAG, "Failed to write global setting $key = $value", e)
+            false
         }
     }
 
     private fun writeSecureSetting(key: String, value: Int): Boolean {
         return try {
-            if (appContext.checkSelfPermission(WRITE_SECURE_SETTINGS) == PackageManager.PERMISSION_GRANTED) {
-                Settings.Secure.putInt(appContext.contentResolver, key, value)
-            } else {
-                writeViaShell("settings put secure $key $value")
-            }
+            Settings.Secure.putInt(appContext.contentResolver, key, value)
         } catch (e: Throwable) {
-            writeViaShell("settings put secure $key $value")
-        }
-    }
-
-    private fun writeViaShell(command: String): Boolean {
-        if (!Shizuku.pingBinder()) return false
-        return try {
-            val p = Shizuku.newProcess(arrayOf("sh", "-c", command), null, null)
-            p.waitFor() == 0
-        } catch (e: Throwable) {
-            Log.w(TAG, "Failed to run shell command: $command", e)
+            Log.w(TAG, "Failed to write secure setting $key = $value", e)
             false
         }
     }
