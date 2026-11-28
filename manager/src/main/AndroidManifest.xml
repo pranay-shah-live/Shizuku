@@ -218,6 +218,19 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name=".stealth.StealthProfilesActivity"
+            android:exported="false"
+            android:label="@string/stealth_profiles_title" />
+
+        <receiver
+            android:name=".stealth.StealthNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="moe.shizuku.manager.action.REVERT_STEALTH" />
+            </intent-filter>
+        </receiver>
+
         <receiver
             android:name=".receiver.BootCompleteReceiver"
             android:enabled="false"

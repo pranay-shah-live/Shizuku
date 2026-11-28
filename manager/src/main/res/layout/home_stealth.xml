@@ -41,11 +41,11 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_select_targets"
+            android:id="@+id/button_profiles"
             style="@style/CardButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stealth_force_stop_select_target"
+            android:text="@string/stealth_button_manage_profiles"
             app:icon="@drawable/ic_settings_outline_24dp" />
 
         <com.google.android.material.button.MaterialButton

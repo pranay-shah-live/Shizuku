@@ -319,4 +319,27 @@
     <string name="stealth_force_stop_success">Force stopped %d app(s)</string>
     <string name="stealth_force_stop_dialog_title">Select apps to force stop</string>
 
+    <!-- App Stealth Profiles (Geto Integration) -->
+    <string name="stealth_profiles_title">App Stealth Profiles</string>
+    <string name="stealth_profiles_description">Configure per-app stealth profiles to mask Developer Options, USB debugging, Wireless debugging, and Accessibility Services before launching sensitive apps.</string>
+    <string name="stealth_button_manage_profiles">Manage profiles</string>
+    <string name="stealth_button_launch">Launch</string>
+    <string name="stealth_profile_dialog_desc">Select which security settings to mask when this app is launched:</string>
+    <string name="stealth_hide_dev_options">Hide Developer Options</string>
+    <string name="stealth_hide_usb_debugging">Hide USB Debugging</string>
+    <string name="stealth_hide_wifi_debugging">Hide Wireless Debugging</string>
+    <string name="stealth_hide_accessibility">Hide Accessibility Services</string>
+    <string name="stealth_action_revert">Revert Settings</string>
+    <string name="stealth_action_reset_default">Reset to default</string>
+    <string name="stealth_settings_reverted">Restored original device settings</string>
+    <string name="stealth_cannot_launch_app">Cannot find launchable activity for this app</string>
+    <string name="stealth_banner_title">Settings masked for %s</string>
+    <string name="stealth_banner_desc">Security checks are currently masked. Revert once you are done.</string>
+    <string name="stealth_notif_active_title">Stealth Active: %s</string>
+    <string name="stealth_notif_active_text">Developer options &amp; debugging are hidden. Tap below to restore.</string>
+    <plurals name="stealth_masked_settings_count">
+        <item quantity="one">%d setting masked</item>
+        <item quantity="other">%d settings masked</item>
+    </plurals>
+
 </resources>

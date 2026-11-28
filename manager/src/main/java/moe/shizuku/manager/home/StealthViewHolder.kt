@@ -18,6 +18,8 @@ import moe.shizuku.manager.R
 import moe.shizuku.manager.ShizukuSettings
 import moe.shizuku.manager.databinding.HomeItemContainerBinding
 import moe.shizuku.manager.databinding.HomeStealthBinding
+import moe.shizuku.manager.stealth.AppProfileManager
+import moe.shizuku.manager.stealth.StealthProfilesActivity
 import moe.shizuku.manager.stealth.StealthTutorialActivity
 import moe.shizuku.manager.utils.UserHandleCompat
 import rikka.recyclerview.BaseViewHolder
@@ -79,8 +81,8 @@ class StealthViewHolder(
             v.context.startActivity(Intent(v.context, StealthTutorialActivity::class.java))
         }
 
-        binding.buttonSelectTargets.setOnClickListener { v ->
-            showTargetAppSelector(v.context)
+        binding.buttonProfiles.setOnClickListener { v ->
+            v.context.startActivity(Intent(v.context, StealthProfilesActivity::class.java))
         }
 
         binding.buttonForceStop.setOnClickListener { v ->
@@ -128,7 +130,8 @@ class StealthViewHolder(
     }
 
     private fun performForceStop(context: Context) {
-        val targets = getSelectedPackages()
+        val configured = AppProfileManager.getSavedPackages()
+        val targets = if (configured.isNotEmpty()) configured else getSelectedPackages()
         if (targets.isEmpty()) {
             Toast.makeText(context, R.string.stealth_force_stop_none_selected, Toast.LENGTH_LONG).show()
             showTargetAppSelector(context)
